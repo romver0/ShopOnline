@@ -1,0 +1,16 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+    {% load basket %}
+    {% load operations %}
+
+    <h1>Индекс товара - {{ product_id }}</h1>
+    <p>{{ product.name }}</p>
+    <p>{{ product.category }}</p>
+    <p>{{ product.description }}</p>
+    <p>{{ product.price }}</p>
+    <p>{{ product.image }}</p>
+    <img src="{{product.image.url}}" alt="Card image cap" width="50">
+
+
+{% endblock %}
