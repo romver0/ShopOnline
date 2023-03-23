@@ -1,6 +1,7 @@
 from django.views import View
 from store.models.product import Product
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 
 class Basket(View):
