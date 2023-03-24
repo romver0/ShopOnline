@@ -19,7 +19,7 @@ class Login(View):
                 'error': 'С такой почтой нет пользователя',
                 # 'skip': True
             }
-            return render(request, 'store/login.html', context=context)
+            return render(request, 'store/../../templates/registration/login.html', context=context)
         else:
             # login(request, user)
             # password = check_password(password)
@@ -41,7 +41,7 @@ class Login(View):
                 'error': error_message,
                 # 'skip': True,
             }
-            return render(request, 'store/login.html', context=context)
+            return render(request, 'store/../../templates/registration/login.html', context=context)
             # return HttpResponse(f'Твой профиль {user.first_name} {user.last_name}')
 
     def get(self, request):
@@ -49,7 +49,7 @@ class Login(View):
         context = {
             # 'skip': True
         }
-        return render(request, 'store/login.html', context=context)
+        return render(request, 'store/../../templates/registration/login.html', context=context)
 
 
 def logout(request):

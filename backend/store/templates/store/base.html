@@ -57,7 +57,7 @@
               <span class="sr-only">1</span></a>
         </li>
 
-        {% if request.session.user_id %}
+        {% if user.is_authenticated %}
         <li class="nav-item ">
 {#          <a class="nav-link" href="{% url 'orders' %}">Заказы<span class="sr-only">(current)</span></a>#}
             <a class="nav-link" href="{% url 'orders' %}">Заказы<span class="sr-only">2</span></a>
